@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Staking</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Staking.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.20.4, nicepage.com">
+    <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+    <link rel="icon" href="images/favicon2.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "stakehubapp"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Staking">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-0RDC3241P6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0RDC3241P6');
+</script></head>
+  <body class="u-body"> 
+    <section class="u-black u-clearfix u-section-1" id="sec-19bb">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <div class="u-black u-border-2 u-border-custom-color-3 u-container-style u-expanded-width u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <img class="u-image u-image-default u-image-1" src="images/LogoMockupFinal.png" alt="" data-image-width="7042" data-image-height="1754" data-href="Home.html" data-page-id="260382312">
+            <div class="u-clearfix u-custom-html u-custom-html-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">
+              <button onclick="loadWeb3()" style="background-color:#0055a5;color:white;width:186px;border-radius:12px;border-color:white;">Connect Wallet</button>
+            </div>
+            <div class="u-clearfix u-custom-html u-expanded-width-xs u-custom-html-2">
+              <table align="center">
+                <tbody>
+                  <tr>
+                    <td style="color:white;font-size:75%;font-family:roboto;">
+                      <span id="connectedChain"></span>
+                      <span id="connectedAccount"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="u-black u-border-2 u-border-custom-color-3 u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-group-2">
+          <div class="u-container-layout u-container-layout-2">
+            <a href="Home.html" data-page-id="260382312" class="u-border-1 u-border-custom-color-4 u-border-hover-white u-btn u-btn-round u-button-style u-custom-font u-heading-font u-none u-radius-4 u-text-hover-white u-btn-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">Home<span class="u-icon u-icon-1"><svg class="u-svg-content" viewBox="0 0 490.667 490.667" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M466.201,237.781L231.534,3.115C229.55,1.131,226.841,0,224.003,0h-192c-4.309,0-8.213,2.603-9.856,6.592 s-0.725,8.555,2.304,11.627l227.136,227.115L24.451,472.448c-3.051,3.051-3.968,7.637-2.304,11.627 c1.664,3.989,5.547,6.592,9.856,6.592h192c2.837,0,5.547-1.131,7.552-3.115l234.667-234.667 C470.382,248.704,470.382,241.963,466.201,237.781z"></path></svg><img></span>
+            </a>
+            <a href="Staking.html" data-page-id="82154329" class="u-border-1 u-border-custom-color-4 u-border-hover-white u-btn u-btn-round u-button-style u-custom-font u-heading-font u-none u-radius-4 u-text-hover-white u-btn-2" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">Staking<span class="u-icon u-icon-2"><svg class="u-svg-content" viewBox="0 0 490.667 490.667" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M466.201,237.781L231.534,3.115C229.55,1.131,226.841,0,224.003,0h-192c-4.309,0-8.213,2.603-9.856,6.592 s-0.725,8.555,2.304,11.627l227.136,227.115L24.451,472.448c-3.051,3.051-3.968,7.637-2.304,11.627 c1.664,3.989,5.547,6.592,9.856,6.592h192c2.837,0,5.547-1.131,7.552-3.115l234.667-234.667 C470.382,248.704,470.382,241.963,466.201,237.781z"></path></svg><img></span>
+            </a>
+            <a href="Voting.html" data-page-id="5395375" class="u-border-1 u-border-custom-color-4 u-border-hover-white u-btn u-btn-round u-button-style u-custom-font u-heading-font u-none u-radius-4 u-text-hover-white u-btn-3" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">Voting<span class="u-icon u-icon-3"><svg class="u-svg-content" viewBox="0 0 490.667 490.667" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M466.201,237.781L231.534,3.115C229.55,1.131,226.841,0,224.003,0h-192c-4.309,0-8.213,2.603-9.856,6.592 s-0.725,8.555,2.304,11.627l227.136,227.115L24.451,472.448c-3.051,3.051-3.968,7.637-2.304,11.627 c1.664,3.989,5.547,6.592,9.856,6.592h192c2.837,0,5.547-1.131,7.552-3.115l234.667-234.667 C470.382,248.704,470.382,241.963,466.201,237.781z"></path></svg><img></span>
+            </a>
+            <a href="https://stakehub.finance/Coming-Soon.html" class="u-border-1 u-border-custom-color-4 u-border-hover-white u-btn u-btn-round u-button-style u-custom-font u-heading-font u-none u-radius-4 u-text-hover-white u-btn-4" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" target="_blank">Coming Soon<span class="u-icon u-icon-4"><svg class="u-svg-content" viewBox="0 0 490.667 490.667" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M466.201,237.781L231.534,3.115C229.55,1.131,226.841,0,224.003,0h-192c-4.309,0-8.213,2.603-9.856,6.592 s-0.725,8.555,2.304,11.627l227.136,227.115L24.451,472.448c-3.051,3.051-3.968,7.637-2.304,11.627 c1.664,3.989,5.547,6.592,9.856,6.592h192c2.837,0,5.547-1.131,7.552-3.115l234.667-234.667 C470.382,248.704,470.382,241.963,466.201,237.781z"></path></svg><img></span>
+            </a>
+          </div>
+        </div>
+        <div class="u-align-left u-container-style u-custom-color-3 u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-group-3">
+          <div class="u-container-layout u-container-layout-3">
+            <div class="u-border-3 u-border-palette-1-base u-container-style u-group u-group-4">
+              <div class="u-container-layout u-container-layout-4">
+                <h1 class="u-align-center u-text u-text-1">Staking Center</h1>
+                <h4 class="u-align-center u-text u-text-2">Stake for a fixed APY with no Token principal risk​.</h4>
+              </div>
+            </div>
+            <a href="https://stakehub.finance/Common-Troubleshooting" class="u-border-2 u-border-hover-black u-border-white u-btn u-button-style u-custom-color-3 u-custom-font u-heading-font u-hover-white u-text-hover-black u-text-white u-btn-5" data-animation-name="fadeIn" data-animation-duration="2000" data-animation-delay="0" target="_blank">Help<span class="u-icon u-icon-5"><svg class="u-svg-content" viewBox="0 0 490.667 490.667" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M466.201,237.781L231.534,3.115C229.55,1.131,226.841,0,224.003,0h-192c-4.309,0-8.213,2.603-9.856,6.592 s-0.725,8.555,2.304,11.627l227.136,227.115L24.451,472.448c-3.051,3.051-3.968,7.637-2.304,11.627 c1.664,3.989,5.547,6.592,9.856,6.592h192c2.837,0,5.547-1.131,7.552-3.115l234.667-234.667 C470.382,248.704,470.382,241.963,466.201,237.781z"></path></svg><img></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-2" id="sec-efe5">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <div class="u-align-left u-container-style u-custom-color-3 u-expanded-width u-group u-group-1">
+          <div class="u-container-layout u-valign-top-sm u-valign-top-xs u-container-layout-1">
+            <div class="u-black u-border-3 u-border-palette-1-base u-container-style u-group u-group-2">
+              <div class="u-container-layout u-container-layout-2">
+                <img class="u-image u-image-default u-image-1" src="images/FaviconFinalTransparent1.png" alt="" data-image-width="4101" data-image-height="4115">
+                <h2 class="u-align-center-xs u-text u-text-1">STKHB for STKHB</h2>
+                <div class="u-container-style u-group u-group-3">
+                  <div class="u-container-layout">
+                    <div class="u-clearfix u-custom-html u-custom-html-1">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:150%;font-family:roboto;" id="balanceOf"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h5 class="u-align-center u-text u-text-2">Wallet Balance</h5>
+                  </div>
+                </div>
+                <div class="u-align-center u-container-style u-group u-group-4">
+                  <div class="u-container-layout">
+                    <div class="u-clearfix u-custom-html u-custom-html-2">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:150%;font-family:roboto;" id="stakeOf"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h5 class="u-text u-text-3">Your Staked Balance</h5>
+                  </div>
+                </div>
+                <div class="u-container-style u-group u-group-5">
+                  <div class="u-container-layout u-container-layout-5">
+                    <div class="u-clearfix u-custom-html u-custom-html-3">
+                      <input placeholder="          Amount" id="stake" type="text" style="background-color:#0055a5;color:white;border-color:white;width:149px;border-radius:12px;">
+                    </div>
+                    <div class="u-clearfix u-custom-html u-custom-html-4">
+                      <button onclick="createStake();" style="background-color:#0055a5;color:white;width:150px;border-radius:12px;border-color:white;">Add Stake</button>
+                    </div>
+                    <div class="u-clearfix u-custom-html u-custom-html-5">
+                      <button onclick="removeStake();" style="background-color:#0055a5;color:white;width:150px;border-radius:12px;border-color:white;">Remove Stake</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-align-center u-container-style u-group u-group-6">
+                  <div class="u-container-layout">
+                    <div class="u-clearfix u-custom-html u-custom-html-6">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:150%;font-family:roboto;" id="calculateReward"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h5 class="u-text u-text-4">Your Pending rewards</h5>
+                  </div>
+                </div>
+                <div class="u-clearfix u-custom-html u-custom-html-7">
+                  <button onclick="collectRewards();" style="background-color:#0055a5;color:white;width:149px;border-radius:12px;border-color:white;">Collect Rewards</button>
+                </div>
+                <div class="u-container-style u-group u-group-7">
+                  <div class="u-container-layout">
+                    <h6 class="u-text u-text-5">APY:</h6>
+                    <div class="u-clearfix u-custom-html u-custom-html-8">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:100%;font-family:roboto;" id="rewardRate"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-container-style u-group u-group-8">
+                  <div class="u-container-layout">
+                    <h6 class="u-text u-text-6">Total Staked:</h6>
+                    <div class="u-clearfix u-custom-html u-custom-html-9">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:100%;font-family:roboto;" id="totalStaked"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-container-style u-group u-group-9">
+                  <div class="u-container-layout">
+                    <h6 class="u-text u-text-7">Total Rewards:</h6>
+                    <div class="u-clearfix u-custom-html u-custom-html-10">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:100%;font-family:roboto;" id="totalRewards"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <a href="https://nicepage.com/website-builder" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-none u-text-palette-1-base u-btn-1">View Contract<span class="u-icon"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068 c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557 l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104 c0.006-.006,0.011-.013,0.018-.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path></svg><img></span>
+                </a>
+              </div>
+            </div>
+            <div class="u-black u-border-3 u-border-palette-1-base u-container-style u-group u-group-10">
+              <div class="u-container-layout u-container-layout-10">
+                <div class="u-container-style u-group u-group-11">
+                  <div class="u-container-layout">
+                    <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-11">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:150%;font-family:roboto;" id=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h5 class="u-align-center u-text u-text-8">Wallet Balance</h5>
+                  </div>
+                </div>
+                <div class="u-align-center u-container-style u-group u-group-12">
+                  <div class="u-container-layout">
+                    <div class="u-clearfix u-custom-html u-custom-html-12">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:150%;font-family:roboto;" id=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h5 class="u-text u-text-9">Your Staked Balance</h5>
+                  </div>
+                </div>
+                <div class="u-container-style u-group u-group-13">
+                  <div class="u-container-layout u-container-layout-13">
+                    <div class="u-clearfix u-custom-html u-custom-html-13">
+                      <input placeholder="          Amount" id="" type="text" style="background-color:#0055a5;color:white;border-color:white;width:149px;border-radius:12px;">
+                    </div>
+                    <div class="u-clearfix u-custom-html u-custom-html-14">
+                      <button onclick="" style="background-color:#0055a5;color:white;width:150px;border-radius:12px;border-color:white;">Add Stake</button>
+                    </div>
+                    <div class="u-clearfix u-custom-html u-custom-html-15">
+                      <button onclick="removeStake();" style="background-color:#0055a5;color:white;width:150px;border-radius:12px;border-color:white;">Remove Stake</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-align-center u-container-style u-group u-group-14">
+                  <div class="u-container-layout">
+                    <div class="u-clearfix u-custom-html u-custom-html-16">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:150%;font-family:roboto;" id=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h5 class="u-text u-text-10">Your Pending rewards</h5>
+                  </div>
+                </div>
+                <div class="u-clearfix u-custom-html u-custom-html-17">
+                  <button onclick="" style="background-color:#0055a5;color:white;width:149px;border-radius:12px;border-color:white;">Collect Rewards</button>
+                </div>
+                <div class="u-container-style u-group u-group-15">
+                  <div class="u-container-layout">
+                    <h6 class="u-text u-text-11">APY:</h6>
+                    <div class="u-clearfix u-custom-html u-custom-html-18">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:100%;font-family:roboto;" id=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-container-style u-group u-group-16">
+                  <div class="u-container-layout">
+                    <h6 class="u-text u-text-12">Total Staked:</h6>
+                    <div class="u-clearfix u-custom-html u-custom-html-19">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:100%;font-family:roboto;" id=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-container-style u-group u-group-17">
+                  <div class="u-container-layout">
+                    <h6 class="u-text u-text-13">Total Rewards:</h6>
+                    <div class="u-clearfix u-custom-html u-custom-html-20">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:100%;font-family:roboto;" id=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <a href="https://stakehub.finance/Coming-Soon.html" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-none u-text-palette-1-base u-btn-2" target="_blank">View Contract<span class="u-icon"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068 c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557 l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104 c0.006-.006,0.011-.013,0.018-.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path></svg><img></span>
+                </a>
+                <div class="u-expanded-height-md u-expanded-height-sm u-hidden-md u-hidden-sm u-hidden-xs u-opacity u-opacity-85 u-palette-1-base u-shape u-shape-rectangle u-shape-1"></div>
+                <h2 class="u-text u-text-14">COMING SOON</h2>
+                <img class="u-image u-image-default u-preserve-proportions u-image-2" src="images/bitcoinfavicon.png" alt="" data-image-width="633" data-image-height="633">
+                <img class="u-image u-image-default u-image-3" src="images/FaviconFinalTransparent1.png" alt="" data-image-width="4101" data-image-height="4115">
+                <img class="u-image u-image-default u-image-4" src="images/pnghut_plus-sign-clip-art.png" alt="" data-image-width="570" data-image-height="568">
+              </div>
+            </div>
+            <div class="u-black u-border-3 u-border-palette-1-base u-container-style u-group u-group-18">
+              <div class="u-container-layout u-container-layout-18">
+                <div class="u-container-style u-group u-group-19">
+                  <div class="u-container-layout">
+                    <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-21">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:150%;font-family:roboto;" id=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h5 class="u-align-center u-text u-text-15">Wallet Balance</h5>
+                  </div>
+                </div>
+                <div class="u-align-center u-container-style u-group u-group-20">
+                  <div class="u-container-layout">
+                    <div class="u-clearfix u-custom-html u-custom-html-22">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:150%;font-family:roboto;" id=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h5 class="u-text u-text-16">Your Staked Balance</h5>
+                  </div>
+                </div>
+                <div class="u-container-style u-group u-group-21">
+                  <div class="u-container-layout u-container-layout-21">
+                    <div class="u-clearfix u-custom-html u-custom-html-23">
+                      <input placeholder="          Amount" id="" type="text" style="background-color:#0055a5;color:white;border-color:white;width:149px;border-radius:12px;">
+                    </div>
+                    <div class="u-clearfix u-custom-html u-custom-html-24">
+                      <button onclick="" style="background-color:#0055a5;color:white;width:150px;border-radius:12px;border-color:white;">Add Stake</button>
+                    </div>
+                    <div class="u-clearfix u-custom-html u-custom-html-25">
+                      <button onclick="removeStake();" style="background-color:#0055a5;color:white;width:150px;border-radius:12px;border-color:white;">Remove Stake</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-align-center u-container-style u-group u-group-22">
+                  <div class="u-container-layout">
+                    <div class="u-clearfix u-custom-html u-custom-html-26">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:150%;font-family:roboto;" id=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <h5 class="u-text u-text-17">Your Pending rewards</h5>
+                  </div>
+                </div>
+                <div class="u-clearfix u-custom-html u-custom-html-27">
+                  <button onclick="" style="background-color:#0055a5;color:white;width:149px;border-radius:12px;border-color:white;">Collect Rewards</button>
+                </div>
+                <div class="u-container-style u-group u-group-23">
+                  <div class="u-container-layout">
+                    <h6 class="u-text u-text-18">APY:</h6>
+                    <div class="u-clearfix u-custom-html u-custom-html-28">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:100%;font-family:roboto;" id=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-container-style u-group u-group-24">
+                  <div class="u-container-layout">
+                    <h6 class="u-text u-text-19">Total Staked:</h6>
+                    <div class="u-clearfix u-custom-html u-custom-html-29">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:100%;font-family:roboto;" id=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="u-container-style u-group u-group-25">
+                  <div class="u-container-layout">
+                    <h6 class="u-text u-text-20">Total Rewards:</h6>
+                    <div class="u-clearfix u-custom-html u-custom-html-30">
+                      <table align="center">
+                        <tbody>
+                          <tr>
+                            <td style="color:white;font-size:100%;font-family:roboto;" id=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <a href="https://stakehub.finance/Coming-Soon.html" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-none u-text-palette-1-base u-btn-3" target="_blank">View Contract<span class="u-icon"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068 c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557 l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104 c0.006-.006,0.011-.013,0.018-.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path></svg><img></span>
+                </a>
+                <div class="u-expanded-width-xl u-hidden-md u-hidden-sm u-hidden-xs u-opacity u-opacity-85 u-palette-1-base u-shape u-shape-rectangle u-shape-2"></div>
+                <h2 class="u-text u-text-21">COMING SOON</h2>
+                <img class="u-image u-image-default u-preserve-proportions u-image-5" src="images/logo.png" alt="" data-image-width="256" data-image-height="256">
+                <img class="u-image u-image-default u-image-6" src="images/FaviconFinalTransparent1.png" alt="" data-image-width="4101" data-image-height="4115">
+                <img class="u-image u-image-default u-image-7" src="images/pnghut_plus-sign-clip-art.png" alt="" data-image-width="570" data-image-height="568">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-3" id="sec-5c07">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1">
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <title></title>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+          <script> async function printConnectedAccount() {
+        const accounts = await getCurrentAccount();
+        updateConnectedAccount('Wallet Locked');
+        const connectedAccount = " with account " + await getCurrentAccount();
+        updateConnectedAccount(connectedAccount);
+    }
+    function updateConnectedAccount(connectedAccount) {
+        const connectedAccountEl = document.getElementById('connectedAccount');
+        connectedAccountEl.innerHTML = connectedAccount;
+        console.log(connectedAccount);
+    }
+    async function printConnectedChain() {
+        const chainId = await window.web3.eth.getChainId();
+        const chainData = evmChains.getChain(chainId).name;
+        updateConnectedChain('Wallet Locked');
+        const connectedChain = " Connected to " + chainData;
+        updateConnectedChain(connectedChain);
+    }
+    function updateConnectedChain(connectedChain) {
+        const connectedChainEl = document.getElementById('connectedChain');
+        connectedChainEl.innerHTML = connectedChain;
+        console.log(connectedChain);
+    }
+async function loadWeb3() {
+        if (window.ethereum) {
+            window.web3 = new Web3(window.ethereum);
+            window.ethereum.enable();
+			let ethereum = window.ethereum;
+        	const data = [{
+            chainId: '0x38',
+            chainName: 'Binance Smart Chain Main Net',
+            nativeCurrency:
+                {
+                    name: 'BNB',
+                    symbol: 'BNB',
+                    decimals: 18
+                },
+            rpcUrls: ['https://bsc-dataseed.binance.org/'],
+            blockExplorerUrls: ['https://bscscan.com/'],
+        }]
+        const tx = await ethereum.request({method: 'wallet_addEthereumChain', params:data}).catch()
+        if (tx) {
+            console.log(tx)
+        	}
+        }
+	window.contract = await loadContract();
+	load();
+    }
+	
+async function loadContract() {
+        const stakehubABI = [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "addStakeholder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "collectRewards",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "subtractedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "decreaseAllowance",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "nonburnVoteNo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "nonburnVoteYes",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_stake",
+						"type": "uint256"
+					}
+				],
+				"name": "removeStake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_setVoteAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "setMinimumVoteAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_time",
+						"type": "uint256"
+					}
+				],
+				"name": "setRewardBlockTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_supply",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeMaker",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_stake",
+						"type": "uint256"
+					}
+				],
+				"name": "createStake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "addedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseAllowance",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "removeStakeholder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_time",
+						"type": "uint256"
+					}
+				],
+				"name": "setNonBurnVotingPeriod",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_rewardRate",
+						"type": "uint256"
+					}
+				],
+				"name": "setRewardRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_time",
+						"type": "uint256"
+					}
+				],
+				"name": "setVotingPeriod",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_voteAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "voteNo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_voteAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "voteYes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "calculateReward",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "isStakeholder",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minimumVoteAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nonburnNoVoteAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nonburnVotingBlockEnd",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nonburnYesVoteAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "noVoteAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rewardBlockTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "rewardOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rewardRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "stakeOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalRewards",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalStakes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "votingBlockEnd",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "yesVoteAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		]
+        const stkhb_address = "0x6868b38E9831E44EB0ba26d29a6750575aE1d769"
+        const web3 = new Web3("https://bsc-dataseed.binance.org/")
+        return await new window.web3.eth.Contract(stakehubABI, stkhb_address);
+    }
+    async function getCurrentAccount() {
+        const accounts = await window.web3.eth.getAccounts();
+        return accounts[0];
+    }
+    async function createStake() {
+        const accounts = await getCurrentAccount();
+        const createStake = $('#stake').val();
+        window.contract.methods.createStake(accounts, createStake).send({ from: accounts });
+    }
+    async function collectRewards() {
+        const accounts = await getCurrentAccount();
+        window.contract.methods.collectRewards(accounts).send({ from: accounts });
+    }
+    async function removeStake() {
+        const accounts = await getCurrentAccount();
+        const removeStake = $('#stake').val();
+        window.contract.methods.removeStake(accounts, removeStake).send({ from: accounts });
+    }
+    async function load() {
+        await printTotalStaked();
+        await printTotalRewards();
+        await printStakeOf();
+        await printCalculateReward();
+		await printBalanceOf();
+		await printRewardRate();
+		await printConnectedAccount();
+		await printConnectedChain();
+    }
+	async function printBalanceOf() {
+        const accounts = await getCurrentAccount();
+        updateBalanceOf('Wallet Locked');
+        var nf = Intl.NumberFormat();
+        const balanceOf = await window.contract.methods.balanceOf(accounts).call();
+        updateBalanceOf(`${nf.format(balanceOf / 1e18)}`);
+    }
+    function updateBalanceOf(balanceOf) {
+        const balanceOfEl = document.getElementById('balanceOf');
+        balanceOfEl.innerHTML = balanceOf;
+        console.log(balanceOf);
+    }
+    async function printCalculateReward() {
+        const accounts = await getCurrentAccount();
+        updateCalculateReward('Wallet Locked');
+        var nf = Intl.NumberFormat();
+        const calculateReward = await window.contract.methods.calculateReward(accounts).call();
+        updateCalculateReward(`${nf.format(calculateReward / 1e18)}`);
+    }
+    function updateCalculateReward(calculateReward) {
+        const calculateRewardEl = document.getElementById('calculateReward');
+        calculateRewardEl.innerHTML = calculateReward;
+        console.log(calculateReward);
+    }
+    async function printStakeOf() {
+        const accounts = await getCurrentAccount();
+        updateStakeOf('Wallet Locked');
+        var nf = Intl.NumberFormat();
+        const stakeOf = await window.contract.methods.stakeOf(accounts).call();
+        updateStakeOf(`${nf.format(stakeOf / 1e18)}`);
+    }
+    function updateStakeOf(stakeOf) {
+        const stakeOfEl = document.getElementById('stakeOf');
+        stakeOfEl.innerHTML = stakeOf;
+        console.log(stakeOf);
+    }
+    async function printTotalStaked() {
+        updateTotalStaked('Change to BSC');
+        var nf = Intl.NumberFormat();
+        const totalStaked = await window.contract.methods.totalStakes().call();
+        updateTotalStaked(`${nf.format(totalStaked / 1e18)}`);
+    }
+    function updateTotalStaked(totalStaked) {
+        const totalStakedEl = document.getElementById('totalStaked');
+        totalStakedEl.innerHTML = totalStaked;
+        console.log(totalStaked);
+    }
+    async function printTotalRewards() {
+        updateTotalRewards('Change to BSC');
+        var nf = Intl.NumberFormat();
+        const totalRewards = await window.contract.methods.totalRewards().call();
+        updateTotalRewards(`${nf.format(totalRewards / 1e18)}`);
+    }
+    function updateTotalRewards(totalRewards) {
+        const totalRewardsEl = document.getElementById('totalRewards');
+        totalRewardsEl.innerHTML = totalRewards;
+        console.log(totalRewards);
+    }
+    async function printRewardRate() {
+        updateRewardRate('Change to BSC');
+        var nf = Intl.NumberFormat('en-US', {style: 'percent', maximumFractionDigits: 2});
+        const rewardRate = await window.contract.methods.rewardRate().call();
+        updateRewardRate(`${nf.format(((rewardRate * 2880)*365)/ 1e15)}`);
+    }
+    function updateRewardRate(rewardRate) {
+        const rewardRateEl = document.getElementById('rewardRate');
+        rewardRateEl.innerHTML = rewardRate;
+        console.log(rewardRate);
+    } </script>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+  </body>
+</html>

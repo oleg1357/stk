@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Non Burn Voting</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Non-Burn-Voting.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.20.4, nicepage.com">
+    <link rel="icon" href="images/favicon2.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "stakehubapp"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Non Burn Voting">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-0RDC3241P6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0RDC3241P6');
+</script></head>
+  <body class="u-body"> 
+    <section class="u-black u-clearfix u-section-1" id="sec-38d8">
+      <div class="u-clearfix u-sheet u-valign-bottom-lg u-sheet-1">
+        <div class="u-black u-border-2 u-border-custom-color-1 u-container-style u-expanded-width u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <img class="u-image u-image-default u-image-1" src="images/LogoMockupFinal.png" alt="" data-image-width="7042" data-image-height="1754" data-href="Home.html" data-page-id="260382312">
+            <div class="u-clearfix u-custom-html u-custom-html-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">
+              <button onclick="loadWeb3()" style="background-color:#0055a5;color:white;width:185px;border-radius:12px;border-color:white;">Connect Wallet</button>
+            </div>
+            <div class="u-clearfix u-custom-html u-custom-html-2">
+              <table align="center">
+                <tbody>
+                  <tr>
+                    <td style="color:white;font-size:75%;font-family:roboto;">
+                      <span id="connectedChain"></span>
+                      <span id="connectedAccount"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="u-black u-border-2 u-border-custom-color-1 u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-group-2">
+          <div class="u-container-layout u-container-layout-2">
+            <a href="Home.html" data-page-id="260382312" class="u-border-1 u-border-custom-color-2 u-border-hover-white u-btn u-btn-round u-button-style u-custom-font u-heading-font u-none u-radius-4 u-text-hover-white u-btn-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">Home<span class="u-icon u-icon-1"><svg class="u-svg-content" viewBox="0 0 490.667 490.667" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M466.201,237.781L231.534,3.115C229.55,1.131,226.841,0,224.003,0h-192c-4.309,0-8.213,2.603-9.856,6.592 s-0.725,8.555,2.304,11.627l227.136,227.115L24.451,472.448c-3.051,3.051-3.968,7.637-2.304,11.627 c1.664,3.989,5.547,6.592,9.856,6.592h192c2.837,0,5.547-1.131,7.552-3.115l234.667-234.667 C470.382,248.704,470.382,241.963,466.201,237.781z"></path></svg><img></span>
+            </a>
+            <a href="Voting.html" data-page-id="5395375" class="u-border-1 u-border-custom-color-2 u-border-hover-white u-btn u-btn-round u-button-style u-custom-font u-heading-font u-none u-radius-4 u-text-hover-white u-btn-2" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">Staking<span class="u-icon u-icon-2"><svg class="u-svg-content" viewBox="0 0 490.667 490.667" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M466.201,237.781L231.534,3.115C229.55,1.131,226.841,0,224.003,0h-192c-4.309,0-8.213,2.603-9.856,6.592 s-0.725,8.555,2.304,11.627l227.136,227.115L24.451,472.448c-3.051,3.051-3.968,7.637-2.304,11.627 c1.664,3.989,5.547,6.592,9.856,6.592h192c2.837,0,5.547-1.131,7.552-3.115l234.667-234.667 C470.382,248.704,470.382,241.963,466.201,237.781z"></path></svg><img></span>
+            </a>
+            <a href="Voting.html" data-page-id="5395375" class="u-border-1 u-border-custom-color-2 u-border-hover-white u-btn u-btn-round u-button-style u-custom-font u-heading-font u-none u-radius-4 u-text-hover-white u-btn-3" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">Voting<span class="u-icon u-icon-3"><svg class="u-svg-content" viewBox="0 0 490.667 490.667" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M466.201,237.781L231.534,3.115C229.55,1.131,226.841,0,224.003,0h-192c-4.309,0-8.213,2.603-9.856,6.592 s-0.725,8.555,2.304,11.627l227.136,227.115L24.451,472.448c-3.051,3.051-3.968,7.637-2.304,11.627 c1.664,3.989,5.547,6.592,9.856,6.592h192c2.837,0,5.547-1.131,7.552-3.115l234.667-234.667 C470.382,248.704,470.382,241.963,466.201,237.781z"></path></svg><img></span>
+            </a>
+            <a href="https://stakehub.finance/Coming-Soon.html" class="u-border-1 u-border-custom-color-2 u-border-hover-white u-btn u-btn-round u-button-style u-custom-font u-heading-font u-none u-radius-4 u-text-hover-white u-btn-4" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" target="_blank">Coming Soon<span class="u-icon u-icon-4"><svg class="u-svg-content" viewBox="0 0 490.667 490.667" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M466.201,237.781L231.534,3.115C229.55,1.131,226.841,0,224.003,0h-192c-4.309,0-8.213,2.603-9.856,6.592 s-0.725,8.555,2.304,11.627l227.136,227.115L24.451,472.448c-3.051,3.051-3.968,7.637-2.304,11.627 c1.664,3.989,5.547,6.592,9.856,6.592h192c2.837,0,5.547-1.131,7.552-3.115l234.667-234.667 C470.382,248.704,470.382,241.963,466.201,237.781z"></path></svg><img></span>
+            </a>
+          </div>
+        </div>
+        <div class="u-align-left u-container-style u-custom-color-1 u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-group-3">
+          <div class="u-container-layout u-container-layout-3">
+            <div class="u-align-center u-border-3 u-border-palette-1-base u-container-style u-group u-group-4">
+              <div class="u-container-layout u-container-layout-4">
+                <h1 class="u-text u-text-1">Non-burn voting</h1>
+                <h4 class="u-text u-text-2">Vote on non-state changes for stakehub.</h4>
+              </div>
+            </div>
+            <a href="https://stakehub.finance/Common-Troubleshooting" class="u-border-2 u-border-hover-black u-border-white u-btn u-button-style u-custom-color-1 u-custom-font u-heading-font u-hover-white u-text-hover-black u-text-white u-btn-5" data-animation-name="fadeIn" data-animation-duration="2000" data-animation-delay="0" target="_blank">Help<span class="u-icon u-icon-5"><svg class="u-svg-content" viewBox="0 0 490.667 490.667" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M466.201,237.781L231.534,3.115C229.55,1.131,226.841,0,224.003,0h-192c-4.309,0-8.213,2.603-9.856,6.592 s-0.725,8.555,2.304,11.627l227.136,227.115L24.451,472.448c-3.051,3.051-3.968,7.637-2.304,11.627 c1.664,3.989,5.547,6.592,9.856,6.592h192c2.837,0,5.547-1.131,7.552-3.115l234.667-234.667 C470.382,248.704,470.382,241.963,466.201,237.781z"></path></svg><img></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-2" id="sec-28ee">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-container-style u-custom-color-1 u-expanded-width u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <div class="u-border-3 u-border-palette-1-base u-container-style u-group u-group-2">
+              <div class="u-container-layout u-container-layout-2">
+                <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1">
+                  <h1 style="text-align: center;">Proposal NB-STKHB-1 Coming Soon!</h1>
+                  <p>Proposal details will appear where when the first proposal is launched. Check out our discord for updates on upcoming votes!</p>
+                </div>
+                <div class="u-clearfix u-custom-html u-custom-html-1">
+                  <button onclick="nonburnVoteNo();" style="background-color:#0055a5;color:white;width:185px;border-radius:12px;border-color:white;">Vote No</button>
+                </div>
+                <div class="u-clearfix u-custom-html u-custom-html-2">
+                  <button onclick="nonburnVoteYes();" style="background-color:#0055a5;color:white;width:185px;border-radius:12px;border-color:white;">Vote Yes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-3" id="sec-f51d">
+      <div class="u-align-left u-clearfix u-sheet u-valign-middle-md u-sheet-1">
+        <div class="u-align-left u-container-style u-custom-color-1 u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-group u-group-1">
+          <div class="u-container-layout u-valign-bottom-md u-container-layout-1">
+            <div class="u-align-center-lg u-align-center-xl u-border-3 u-border-palette-1-base u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-group-2">
+              <div class="u-container-layout u-container-layout-2">
+                <h3 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-1" data-animation-name="fadeIn" data-animation-duration="2000" data-animation-delay="0">non-burn voting Statistics</h3>
+                <div class="u-clearfix u-custom-html u-custom-html-1" data-animation-name="slideIn" data-animation-duration="2000" data-animation-delay="0" data-animation-direction="Down">
+                  <table align="center">
+                    <tbody>
+                      <tr>
+                        <td style="color:white;font-size:150%;font-family:roboto;" id="nonburnVotingBlockEnd"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="u-clearfix u-custom-html u-custom-html-2" data-animation-name="slideIn" data-animation-duration="2000" data-animation-delay="0" data-animation-direction="Down">
+                  <table align="center">
+                    <tbody>
+                      <tr>
+                        <td style="color:white;font-size:150%;font-family:roboto;" id="nonburnYesVoteAmount"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="u-clearfix u-custom-html u-custom-html-3" data-animation-name="slideIn" data-animation-duration="2000" data-animation-delay="0" data-animation-direction="Down">
+                  <table align="center">
+                    <tbody>
+                      <tr>
+                        <td style="color:white;font-size:150%;font-family:roboto;" id="nonburnNoVoteAmount"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <h5 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-2" data-animation-name="fadeIn" data-animation-duration="2000" data-animation-delay="0">No Vote Tally</h5>
+                <h5 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-3" data-animation-name="fadeIn" data-animation-duration="2000" data-animation-delay="0">Voting Block End</h5>
+                <h5 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-4" data-animation-name="fadeIn" data-animation-duration="2000" data-animation-delay="0">Yes Vote Tally</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-4" id="sec-be15">
+      <div class="u-clearfix u-sheet u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-xl u-valign-top-sm u-valign-top-xs u-sheet-1">
+        <div class="u-clearfix u-custom-html u-expanded-width-sm u-expanded-width-xs u-custom-html-1">
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <title></title>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+          <script> async function printConnectedAccount() {
+        const accounts = await getCurrentAccount();
+        updateConnectedAccount('Wallet Locked');
+        const connectedAccount = " with account " + await getCurrentAccount();
+        updateConnectedAccount(connectedAccount);
+    }
+    function updateConnectedAccount(connectedAccount) {
+        const connectedAccountEl = document.getElementById('connectedAccount');
+        connectedAccountEl.innerHTML = connectedAccount;
+        console.log(connectedAccount);
+    }
+    async function printConnectedChain() {
+        const chainId = await window.web3.eth.getChainId();
+        const chainData = evmChains.getChain(chainId).name;
+        updateConnectedChain('Wallet Locked');
+        const connectedChain = " Connected to " + chainData;
+        updateConnectedChain(connectedChain);
+    }
+    function updateConnectedChain(connectedChain) {
+        const connectedChainEl = document.getElementById('connectedChain');
+        connectedChainEl.innerHTML = connectedChain;
+        console.log(connectedChain);
+    }
+async function loadWeb3() {
+        if (window.ethereum) {
+            window.web3 = new Web3(window.ethereum);
+            window.ethereum.enable();
+			let ethereum = window.ethereum;
+        	const data = [{
+            chainId: '0x38',
+            chainName: 'Binance Smart Chain Main Net',
+            nativeCurrency:
+                {
+                    name: 'BNB',
+                    symbol: 'BNB',
+                    decimals: 18
+                },
+            rpcUrls: ['https://bsc-dataseed.binance.org/'],
+            blockExplorerUrls: ['https://bscscan.com/'],
+        }]
+        const tx = await ethereum.request({method: 'wallet_addEthereumChain', params:data}).catch()
+        if (tx) {
+            console.log(tx)
+        	}
+        }
+	window.contract = await loadContract();
+	load();
+    }
+async function loadContract() {
+        const stakehubABI = [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "addStakeholder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "collectRewards",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "subtractedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "decreaseAllowance",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "nonburnVoteNo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "nonburnVoteYes",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_stake",
+						"type": "uint256"
+					}
+				],
+				"name": "removeStake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_setVoteAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "setMinimumVoteAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_time",
+						"type": "uint256"
+					}
+				],
+				"name": "setRewardBlockTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_supply",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeMaker",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_stake",
+						"type": "uint256"
+					}
+				],
+				"name": "createStake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "addedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseAllowance",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "removeStakeholder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_time",
+						"type": "uint256"
+					}
+				],
+				"name": "setNonBurnVotingPeriod",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_rewardRate",
+						"type": "uint256"
+					}
+				],
+				"name": "setRewardRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_time",
+						"type": "uint256"
+					}
+				],
+				"name": "setVotingPeriod",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_voteAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "voteNo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_voteAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "voteYes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "calculateReward",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "isStakeholder",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minimumVoteAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nonburnNoVoteAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nonburnVotingBlockEnd",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nonburnYesVoteAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "noVoteAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rewardBlockTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "rewardOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rewardRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_stakeholder",
+						"type": "address"
+					}
+				],
+				"name": "stakeOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalRewards",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalStakes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "votingBlockEnd",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "yesVoteAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		]
+        const stkhb_address = "0x6868b38E9831E44EB0ba26d29a6750575aE1d769"
+        const web3 = new Web3("https://bsc-dataseed.binance.org/")
+        return await new window.web3.eth.Contract(stakehubABI, stkhb_address);
+    }
+    async function getCurrentAccount() {
+        const accounts = await window.web3.eth.getAccounts();
+        return accounts[0];
+    }
+    
+    async function nonburnVoteYes() {
+        const accounts = await getCurrentAccount();
+        window.contract.methods.nonburnVoteYes(accounts).send({ from: accounts });
+    }
+    
+    async function nonburnVoteNo() {
+        const accounts = await getCurrentAccount();
+        window.contract.methods.nonburnVoteNo(accounts).send({ from: accounts });
+    }
+    async function load() {
+	await printNonburnVotingBlockEnd();
+	await printNonburnNoVoteAmount();
+	await printNonburnYesVoteAmount();
+	await printConnectedAccount();
+	await printConnectedChain();
+    }
+    
+    async function printNonburnVotingBlockEnd() {
+        var unixtimestamp = await window.contract.methods.nonburnVotingBlockEnd().call();
+        var months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        var date = new Date(unixtimestamp*1000);
+        var year = date.getFullYear();
+        var month = months_arr[date.getMonth()];
+        var day = date.getDate();
+        var hours = date.getHours()
+        var minutes = "0" + date.getMinutes();
+        var seconds = "0" + date.getSeconds();
+        var nonburnVotingBlockEnd = month+'-'+day+'-'+year+' '+hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+        updateNonburnVotingBlockEnd(nonburnVotingBlockEnd);
+    }
+    
+    function updateNonburnVotingBlockEnd(nonburnVotingBlockEnd) {
+        const nonburnVotingBlockEndEl = document.getElementById('nonburnVotingBlockEnd');
+        nonburnVotingBlockEndEl.innerHTML = nonburnVotingBlockEnd;
+        console.log(nonburnVotingBlockEnd);
+    }
+    
+    async function printNonburnNoVoteAmount() {
+        updateNonburnNoVoteAmount('Change to BSC');
+        var nf = Intl.NumberFormat();
+        const nonburnNoVoteAmount = await window.contract.methods.nonburnNoVoteAmount().call();
+        updateNonburnNoVoteAmount(`${nf.format(nonburnNoVoteAmount / 1e18)}`);
+    }
+    
+    function updateNonburnNoVoteAmount(nonburnNoVoteAmount) {
+        const nonburnNoVoteAmountEl = document.getElementById('nonburnNoVoteAmount');
+        nonburnNoVoteAmountEl.innerHTML = nonburnNoVoteAmount;
+        console.log(nonburnNoVoteAmount);
+    }
+    
+    async function printNonburnYesVoteAmount() {
+        updateNonburnYesVoteAmount('Change to BSC');
+        var nf = Intl.NumberFormat();
+        const nonburnYesVoteAmount = await window.contract.methods.nonburnYesVoteAmount().call();
+        updateNonburnYesVoteAmount(`${nf.format(nonburnYesVoteAmount / 1e18)}`);
+    }
+    
+    function updateNonburnYesVoteAmount(nonburnYesVoteAmount) {
+        const nonburnYesVoteAmountEl = document.getElementById('nonburnYesVoteAmount');
+        nonburnYesVoteAmountEl.innerHTML = nonburnYesVoteAmount;
+        console.log(nonburnYesVoteAmount);
+    } </script>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+  </body>
+</html>
